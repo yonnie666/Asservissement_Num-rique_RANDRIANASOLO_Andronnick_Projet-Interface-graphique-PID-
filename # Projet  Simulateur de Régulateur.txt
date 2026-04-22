@@ -57,7 +57,8 @@ $$u(t) = K_p e(t) + K_i \int_0^t e(\tau)d\tau + K_d \frac{de(t)}{dt}$$
 
 ```bash
 # 1. Cloner le dépôt
-git clone https://github.com/VOTRE_COMPTE/Asservissement_Numérique_RANDRIANASOLO_Andronnick_ProjetPID.git
+git clone https://github.com/
+yonnie666/Asservissement_Numérique_RANDRIANASOLO_Andronnick_ProjetPID.git
 cd Asservissement_Numérique_RANDRIANASOLO_Andronnick_ProjetPID
 
 # 2. Installer les dépendances

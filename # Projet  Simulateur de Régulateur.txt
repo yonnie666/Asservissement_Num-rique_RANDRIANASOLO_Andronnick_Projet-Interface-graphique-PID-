@@ -1,0 +1,64 @@
+# Projet : Simulateur de Régulateur PID
+
+## Informations étudiant
+
+| Champ | Information |
+|-------|-------------|
+| **Nom** | RANDRIANASOLO |
+| **Prénom** | Andronnick |
+| **Matière** | Asservissement Numérique |
+| **Projet** | Simulateur PID avec interface graphique |
+| **Date** | Avril 2026 |
+
+---
+
+## Objectif du projet
+
+Développer un simulateur interactif de régulateur PID (Proportionnel-Intégral-Dérivé) permettant de visualiser en temps réel l'effet des paramètres Kp, Ki et Kd sur la réponse d'un système dynamique du premier ordre.
+
+---
+
+## Fonctionnalités implémentées
+
+| Fonctionnalité | Statut |
+|----------------|--------|
+| Interface graphique Tkinter | ✅ |
+| Ajustement Kp, Ki, Kd en temps réel | ✅ |
+| Graphique dynamique de la réponse | ✅ |
+| Simulation du processus (1er ordre + bruit) | ✅ |
+| Modification consigne en cours de simulation | ✅ |
+| Affichage des performances (erreur, commande) | ✅ |
+| Boutons Démarrer/Pause/Reset | ✅ |
+
+---
+
+## Modèle théorique
+
+### Équation du PID
+
+$$u(t) = K_p e(t) + K_i \int_0^t e(\tau)d\tau + K_d \frac{de(t)}{dt}$$
+
+### Paramètres de simulation
+
+- Pas de temps : $T_s = 0.1$ s
+- Processus : $G(s) = \frac{1}{5s + 1}$
+- Bruit : $\mathcal{N}(0, 0.5)$
+
+---
+
+## Installation et exécution
+
+### Prérequis
+
+- Python 3.8 ou supérieur
+- pip
+
+### Installation
+
+```bash
+# 1. Cloner le dépôt
+git clone https://github.com/VOTRE_COMPTE/Asservissement_Numérique_RANDRIANASOLO_Andronnick_ProjetPID.git
+cd Asservissement_Numérique_RANDRIANASOLO_Andronnick_ProjetPID
+
+# 2. Installer les dépendances
+pip install -r requirements.txt
